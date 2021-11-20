@@ -12,6 +12,7 @@ body {
 	font-family: Roboto, sans-serif;
 	font-size: 14px;
 	line-height: 1.71;
+	background: #FFFFFF;
 }
 /*----------------------Фокус----------------------*/
 .iteam-address:hover,
@@ -25,6 +26,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
 ul{
 	padding: 0;
 }
+*{
+	margin: 0;
+}
 /*----------------------Отмена стилий и декораций----------------------*/
 a {
 	text-decoration: none;
@@ -34,7 +38,7 @@ ul {
 /*----------------------Скрываемый текст----------------------*/
 }
 .title-hidden {
-	visibility: hidden;
+	display: none;
 }
 /*----------------------Контейнер----------------------*/
 .container{
@@ -51,14 +55,16 @@ ul {
 .header-item:not(:last-child) {
 	margin-right: 50px;
 }
-.header-webstudio{
+.link-address{
+	padding-top: 32px;
+	padding-bottom: 32px;
+	display: block;
+}
+.web-header{
 	margin-right: 93px;
-}
-.container-address{
-}
-.header-list{
-}
-.header-address{
+	padding-top: 24px;
+	padding-bottom: 25px;
+	display: block;
 }
 .container-mt{
 	margin-left: auto;
@@ -70,7 +76,9 @@ ul {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--footer-text-color);
+	margin-top: 200px;
 }
+
 .web-nav,
 .studio-nav {
 	color: var(--title-color);
@@ -93,23 +101,51 @@ ul {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
-.link-current {
-	color: var(--title-color);
-}
-/*----------------------Особенная часть раздела "Студио"----------------------*/
-.order {
-	background-color: #2f303a;
-	height: 600px;
-	text-align: center;
-}
-.navigation-adress {
-	list-style: none;
-}
 .link-address {
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--main-text-color);
+}
+.link-current {
+	color: var(--title-color);
+}
+.header{
+	border: 1px solid #ECECEC;
+}
+/*----------------------Особенная часть раздела "Студио"----------------------*/
+.section{
+	padding-top: 94px;
+	padding-bottom: 94px;
+	display: flex;
+}
+.section-advantage{
+	padding-top: 94px;
+}
+.section:nth-child(even){
+	background-color:#F5F4FA;
+}
+.container-title{
+	margin-bottom: 10px;
+}
+.container-img{
+	margin-bottom: 30px;
+}
+.command-item:not(:last-child){
+	margin-right: 30px;
+}
+.command-frame{
+	background: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+.order {
+	background-color: #2f303a;
+	text-align: center;
+	display: flex;
+}
+.navigation-adress {
+	list-style: none;
 }
 .btn-order {
 	font-weight: 700;
@@ -122,6 +158,8 @@ ul {
 	border-radius: 4px;
 	cursor: pointer;
 	border: none;
+	margin-top: 40px;
+	margin-bottom: 200px;
 }
 .advantage {
 	display: flex;
@@ -134,13 +172,14 @@ ul {
 	text-transform: uppercase;
 	color: var(--main-color);
 }
-.title-doing {
+.title-section {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--main-color);
+	margin-bottom: 50px;
 }
 .works {
 	display: flex;
@@ -178,6 +217,19 @@ ul {
 	border-radius: 4px;
 }
 /*----------------------Особенная часть раздела "Партволио"----------------------*/
+.container-portfolio{
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+/*----------------------Кнопки "Партволио"----------------------*/
+.container-btn{
+	display: flex;
+	justify-content: center;
+}
+.element-btn{
+	display: flex;
+	margin-bottom: 50px;
+}
 .btn-element {
 	cursor: pointer;
 	font-weight: 500;
@@ -189,6 +241,18 @@ ul {
 	background-color: #f5f4fa;
 	border-radius: 4px;
 	border: none;
+	padding: 6px 22px;
+}
+.btn-item:not(:last-child){
+	margin-right: 8px;
+}
+/*----------------------Галерея "Партволио"----------------------*/
+.gallery{
+	margin: -15px;
+}
+.title-gallery,.text-gallery{
+	margin-left: 24px;
+	margin-right: 24px;
 }
 .title-gallery {
 	font-weight: 700;
@@ -196,25 +260,34 @@ ul {
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--main-color);
+	margin-top: 20px;
+	margin-bottom: 4px;
 }
 .text-gallery {
 	font-size: 16px;
 	line-height: 1.9;
 	letter-spacing: 0.03em;
+	margin-bottom: 20px;
 }
 .iteam-gallery {
 	display: inline-block;
+	background: var(--footer-text-color);
+	border: 1px solid #EEEEEE;
+	box-sizing: border-box;
+	margin: 15px;
 }
+
 /*----------------------Подвал сайта----------------------*/
 .footer-address {
 	letter-spacing: 0.03em;
 }
-.section-footer {
-	background-color: #2f303a;
-}
 .maps-footer {
 	color: var(--footer-text-color);
 
+}
+.container-footer{
+	margin-top: 60px;
+	margin-bottom: 20px;
 }
 .address-mt {
 	color: #ffffff60;
@@ -229,4 +302,14 @@ ul {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
+}
+.footer-item:not(:last-child){
+	margin-bottom: 9px;
+}
+.footer-item:last-child{
+	margin-bottom: 60px;
+}
+.footer{
+	background-color: #2f303a;
+	display: flex;
 }
