@@ -19,37 +19,33 @@
 		<!--Шапка сайта-->
 		<header class="header">
 			<div class="container header-container">
-				<nav class="address">
-					<div class="container-address">
-					<a class="web-nav web-header" href="./index.html">Web<span class="studio-nav header-webstudio">Studio</span>
+				<nav class="nav">
+					<a class="header-web" href="./index.html">Web<span class="studio-nav">Studio</span>
 					</a>
-					<ul class="nav header-list">
-						<li class="header-item">
-							<a class="iteam-address link-address link-nav link-current" href="./index.html"
+					<ul class="nav-list">
+						<li class="nav-list">
+							<a class="nav-link link-current" href="./index.html"
 								>Студия</a>
 						</li>
-						<li class="header-item">
-							<a class="iteam-address link-address link-nav" href="./portfolio.html">Портфолио</a>
+						<li class="nav-list">
+							<a class="nav-link" href="./portfolio.html">Портфолио</a>
 						</li>
-						<li class="header-item">
-							<a class="iteam-address link-address link-nav" href="#team">Контакты</a>
+						<li class="nav-list">
+							<a class="nav-link" href="#team">Контакты</a>
 						</li>
 					</ul>
-					</div>
 				</nav>
-				<div class="container-mt">
-				<ul class="address header-address">
-					<li class="header-item">
-						<a class="iteam-address link-address link-address" href="mailto:info@devstudio.com"
+				<ul class="contaks ">
+					<li class="contaks-item">
+						<a class="contaks-link" href="mailto:info@devstudio.com"
 							>info@devstudio.com</a
 						>
 					</li>
-					<li class="header-item">
-						<a class="iteam-address link-address  link-address" href="tel:+380961111111"
+					<li class="contaks-item">
+						<a class="contaks-link" href="tel:+380961111111"
 							>+38 096 111 11 11</a
 						>
 					</li>
-				</div>
 				</ul>
 			</div>
 		</header>
@@ -57,16 +53,14 @@
 		<main>
 				<section class=" order">
 					<div class="container">
-						<div class="container-section">
 						<h1 class="order-title">
 							Эффективные решения <br />для вашего бизнеса
 						</h1>
-						</div>
 						<button type="button" class="btn-order">Заказать услугу</button>
 					</div>
 				</section>
 				<!--Секция занятия и планирования-->
-				<section class="section-advantage">
+				<section class="section section-advantage">
 					<div class="container">
 						<h2 class="title-hidden">Преимущество</h2>
 					<ul class="advantage">
@@ -118,30 +112,42 @@
 					</div>
 				</section>
 				<!--Секция команды-->
-				<section class="section">
+				<section class="section section-color">
 					<div class="container">
 						<h2 class="title-section">Наша команда</h2>
 					<ul class="command">
-						<li class="command-item command-frame">
-							<img class="container-img" src="./imeges/employee1.jpg"alt="employee1" width="270" />
-							<h3 class="title-command container-title">Игорь Демьяненко</h3>
+						<li class="command-item">
+							<img class="command-img" src="./imeges/employee1.jpg"alt="employee1" width="270" />
+							<div class="container-command">
+							<h3 class="title-command">Игорь Демьяненко</h3>
 							<p class="text-command">Product Designer</p>
+							</div>
 						</li>
-						<li class="command-item command-frame">
-							<img class="container-img" src="./imeges/employee4.jpg" alt="employee2" width="270" />
-							<h3 class="title-command container-title">Ольга Репина</h3>
+							
+						<li class="command-item">
+							<img class="command-img" src="./imeges/employee4.jpg" alt="employee2" width="270" />
+							<div class="container-command">
+							<h3 class="title-command">Ольга Репина</h3>
 							<p class="text-command">Frontend Developer</p>
+							</div>
 						</li>
-						<li class="command-item command-frame">
-							<img class="container-img" src="./imeges/employee3.jpg" alt="employee3" width="270" />
-							<h3 class="title-command container-title">Николай Тара</h3>
+							
+						<li class="command-item">
+							<img class="command-img" src="./imeges/employee3.jpg" alt="employee3" width="270" />
+							<div class="container-command">
+							<h3 class="title-command">Николай Тара</h3>
 							<p class="text-command">Marketing</p>
+							</div>
 						</li>
-						<li class="command-item command-frame">
-							<img class="container-img" src="./imeges/employee2.jpg" alt="employee4" width="270" />
-							<h3 class="title-command container-title">Михаил Ермаков</h3>
+							
+						<li class="command-item">
+							<img class="command-img" src="./imeges/employee2.jpg" alt="employee4" width="270" />
+							<div class="container-command">
+							<h3 class="title-command">Михаил Ермаков</h3>
 							<p class="text-command">UI Designer</p>
+							</div>
 						</li>
+							
 					</ul>
 					</div>
 				</section>
@@ -149,19 +155,17 @@
 		<!--Подвал сайта-->
 		<footer class="footer">
 			<div class="container">
-				<div class="container-footer">
-				<a class="web-nav web-footer" href="./index.html">Web<span class="studio-footer">Studio</span></a>
-				</div>
+				<a class="footer-web" href="./index.html">Web<span class="studio-footer">Studio</span></a>
 				<address>
 					<ul class="footer-address">
 						<li class="footer-item">
-							<a class="iteam-address maps-footer link-footer"href="https://goo.gl/maps/7n5ivLZafYZ2Yxqt9">г. Киев, пр-т Леси Украинки, 26</a>
+							<a class="maps-footer"href="https://goo.gl/maps/7n5ivLZafYZ2Yxqt9">г. Киев, пр-т Леси Украинки, 26</a>
 						</li>
 						<li class="footer-item">
-							<a class="iteam-address address-mt link-footer" href="mailto:info@example.com">info@example.com</a>
+							<a class="mt-footer" href="mailto:info@example.com">info@example.com</a>
 						</li">
 						<li class="footer-item">
-							<a class="iteam-address address-mt link-footer" href="tel:+380991111111">+38 099 111 11 11</a>
+							<a class="mt-footer" href="tel:+380991111111">+38 099 111 11 11</a>
 						</li>
 					</ul>
 				</address>

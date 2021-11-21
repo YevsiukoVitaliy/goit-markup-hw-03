@@ -7,54 +7,50 @@
 		<title>WebStudio</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
 		<!--Шапка сайта-->
 		<header class="header">
-			<div class="container header-container border-footer">
-				<nav class="address">
-					<div class="container-address">
-					<a class="web-nav web-header" href="./index.html">Web<span class="studio-nav header-webstudio">Studio</span>
+			<div class="container header-container">
+				<nav class="nav">
+					<a class="header-web" href="./index.html">Web<span class="studio-nav">Studio</span>
 					</a>
-					<ul class="nav header-list">
-						<li class="header-item">
-							<a class="iteam-address link-address link-nav" href="./index.html"
+					<ul class="nav-list">
+						<li class="nav-list">
+							<a class="nav-link" href="./index.html"
 								>Студия</a>
 						</li>
-						<li class="header-item">
-							<a class="iteam-address link-address link-nav link-current" href="./portfolio.html">Портфолио</a>
+						<li class="nav-list">
+							<a class="nav-link link-current" href="./portfolio.html">Портфолио</a>
 						</li>
-						<li class="header-item">
-							<a class="iteam-address link-address link-nav" href="#team">Контакты</a>
+						<li class="nav-list">
+							<a class="nav-link" href="#team">Контакты</a>
 						</li>
 					</ul>
-					</div>
 				</nav>
-				<div class="container-mt">
-				<ul class="address header-address">
-					<li class="header-item">
-						<a class="iteam-address link-address link-address" href="mailto:info@devstudio.com"
+				<ul class="contaks ">
+					<li class="contaks-item">
+						<a class="contaks-link" href="mailto:info@devstudio.com"
 							>info@devstudio.com</a
 						>
 					</li>
-					<li class="header-item">
-						<a class="iteam-address link-address  link-address" href="tel:+380961111111"
+					<li class="contaks-item">
+						<a class="contaks-link" href="tel:+380961111111"
 							>+38 096 111 11 11</a
 						>
 					</li>
-				</div>
 				</ul>
 			</div>
 		</header>
 		<!--Секция блок заказа услуги-->
 		<main>
-			<div class="container-portfolio container">
-				<section>
+				<section class="section">
+				<div class="container">
 					<h1 class="title-hidden">
 						Выбор элементов подтипа портфолио WebStudio
 					</h1>
-					<div class="container-btn">
 						<ul class="element-btn">
 							<li class="btn-item">
 								<button class="btn-element btn-cursiv btn-all" type="button">
@@ -82,77 +78,92 @@
 								</button>
 							</li>
 						</ul>
-					</div>
 					<ul class="gallery">
-						<li class="iteam-gallery">
+						<li class="item-gallery">
 							<img src="./imeges-portfolio/veb-link.jpg" width="370" alt="Технокряк"/>
-							<h2 class="title-gallery">Технокряк</h2>
+							<div class="container-gallery">
+								<h2 class="title-gallery">Технокряк</h2>
 							<p class="text-gallery">Веб-сайт</p>
+							</div>
 						</li>
-						<li class="iteam-gallery">
+						<li class="item-gallery">
 							<img src="./imeges-portfolio/poster-new-orlean-vs-golden-star.jpg" width="370" alt="Постер New Orlean vs Golden Star"/>
-							<h2 class="title-gallery">Постер New Orlean vs Golden Star</h2>
+							<div class="container-gallery">
+								<h2 class="title-gallery">Постер New Orlean vs Golden Star</h2>
 							<p class="text-gallery">Дизайн</p>
+							</div>
 						</li>
-						<li class="iteam-gallery">
+						<li class="item-gallery">
 							<img src="./imeges-portfolio/seafood-restaurant.jpg" width="370" alt="Ресторан Seafood"/>
-							<h2 class="title-gallery">Ресторан Seafood</h2>
+							<div class="container-gallery">
+								<h2 class="title-gallery">Ресторан Seafood</h2>
 							<p class="text-gallery">Приложение</p>
+							</div>
 						</li>
-						<li class="iteam-gallery">
+						<li class="item-gallery">
 							<img src="./imeges-portfolio/prime-project.jpg" width="370" alt="Проект Prime"/>
-							<h2 class="title-gallery">Проект Prime</h2>
+							<div class="container-gallery">
+								<h2 class="title-gallery">Проект Prime</h2>
 							<p class="text-gallery">Маркетинг</p>
+							</div>
 						</li>
-						<li class="iteam-gallery">
+						<li class="item-gallery">
 							<img src="./imeges-portfolio/project-boxes.jpg" width="370" alt="Проект Boxes"/>
-							<h2 class="title-gallery">Проект Boxes</h2>
+							<div class="container-gallery">
+								<h2 class="title-gallery">Проект Boxes</h2>
 							<p class="text-gallery">Приложение</p>
+							</div>
 						</li>
-						<li class="iteam-gallery">
+						<li class="item-gallery">
 							<img src="./imeges-portfolio/inspiration-has-no-borders.jpg" width="370" alt="Inspiration has no Borders"/>
-							<h2 class="title-gallery">Inspiration has no Borders</h2>
+							<div class="container-gallery">
+								<h2 class="title-gallery">Inspiration has no Borders</h2>
 							<p class="text-gallery">Веб-сайт</p>
+							</div>
 						</li>
-						<li class="iteam-gallery">
+						<li class="item-gallery">
 							<img src="./imeges-portfolio/limited-edition.jpg" width="370" alt="Издание Limited Edition"/>
-							<h2 class="title-gallery">Издание Limited Edition</h2>
+							<div class="container-gallery">
+								<h2 class="title-gallery">Издание Limited Edition</h2>
 							<p class="text-gallery">Дизайн</p>
+							</div>
 						</li>
-						<li class="iteam-gallery">
+						<li class="item-gallery">
 							<img src="./imeges-portfolio/prodject-lab.jpg" width="370" alt="Проект LAB"/>
-							<h2 class="title-gallery">Проект LAB</h2>
+							<div class="container-gallery">
+								<h2 class="title-gallery">Проект LAB</h2>
 							<p class="text-gallery">Маркетинг</p>
+							</div>
 						</li>
-						<li class="iteam-gallery">
+						<li class="item-gallery">
 							<img src="./imeges-portfolio/growing-business.jpg" width="370" alt="Growing Business"/>
-							<h2 class="title-gallery">Growing Business</h2>
+							<div class="container-gallery">
+								<h2 class="title-gallery">Growing Business</h2>
 							<p class="text-gallery">Приложение</p>
+							</div>
 						</li>
 					</ul>
-				</section>
-			</div>
-		</main>
-		<!--Подвал сайта-->
-		<footer class="footer">
-			<div class="container">
-				<div class="container-footer">
-				<a class="web-nav web-footer" href="./index.html">Web<span class="studio-footer">Studio</span></a>
 				</div>
-				<address>
-					<ul class="footer-address">
-						<li  class="footer-item">
-							<a class="iteam-address maps-footer link-footer"href="https://goo.gl/maps/7n5ivLZafYZ2Yxqt9">г. Киев, пр-т Леси Украинки, 26</a>
-						</li>
-						<li class="footer-item">
-							<a class="iteam-address address-mt link-footer" href="mailto:info@example.com">info@example.com</a>
-						</li">
-						<li class="footer-item">
-							<a class="iteam-address address-mt link-footer" href="tel:+380991111111">+38 099 111 11 11</a>
-						</li>
-					</ul>
-				</address>
-			</div>
-		</footer>
-	</body>
-</html>
+				</section>
+		</main>
+			<!--Подвал сайта-->
+			<footer class="footer">
+				<div class="container">
+					<a class="footer-web" href="./index.html">Web<span class="studio-footer">Studio</span></a>
+					<address>
+						<ul class="footer-address">
+							<li class="footer-item">
+								<a class="maps-footer"href="https://goo.gl/maps/7n5ivLZafYZ2Yxqt9">г. Киев, пр-т Леси Украинки, 26</a>
+							</li>
+							<li class="footer-item">
+								<a class="mt-footer" href="mailto:info@example.com">info@example.com</a>
+							</li">
+							<li class="footer-item">
+								<a class="mt-footer" href="tel:+380991111111">+38 099 111 11 11</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</footer>
+		</body>
+	</html>

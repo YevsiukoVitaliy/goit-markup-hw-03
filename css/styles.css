@@ -15,30 +15,26 @@ body {
 	background: #FFFFFF;
 }
 /*----------------------Фокус----------------------*/
-.iteam-address:hover,
-.iteam-address:focus {
+.nav-link:hover,.contaks-link:hover,
+.nav-link:focus,.contaks-link:focus {
 	color: var(--title-color);
 }
 /*----------------------Обнуление----------------------*/
 h1,h2,h3,h4,h5,h6,p,ul{
-	margin: o;
+	margin: 0;
 }
 ul{
 	padding: 0;
-}
-*{
-	margin: 0;
+	list-style: none;
 }
 /*----------------------Отмена стилий и декораций----------------------*/
 a {
 	text-decoration: none;
 }
-ul {
-	list-style: none;
 /*----------------------Скрываемый текст----------------------*/
-}
 .title-hidden {
-	display: none;
+	visibility:hidden;
+	max-height: 0;
 }
 /*----------------------Контейнер----------------------*/
 .container{
@@ -47,40 +43,40 @@ ul {
 	padding-right: 15px;
 	margin: 0 auto;
 }
+/*----------------------Картинки----------------------*/
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 /*----------------------Шапка----------------------*/
-.header-container,.container-address,.header-list,.header-address{
+.header-container,.nav-list,.contaks,.nav{
 	display: flex;
 	align-items: center;
 }
-.header-item:not(:last-child) {
+.contaks:not(:last-child) {
 	margin-right: 50px;
 }
-.link-address{
+.nav-link,.contaks-link{
 	padding-top: 32px;
 	padding-bottom: 32px;
 	display: block;
 }
-.web-header{
+.header-web{
 	margin-right: 93px;
 	padding-top: 24px;
 	padding-bottom: 25px;
-	display: block;
 }
-.container-mt{
+.contaks{
 	margin-left: auto;
 }
-.order-title {
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.36;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	color: var(--footer-text-color);
-	margin-top: 200px;
+.nav-list:not(:last-child){
+	margin-right: 50px;
 }
-
-.web-nav,
-.studio-nav {
+.contaks-item:not(:last-child){
+margin-right: 50px;
+}
+.footer-web,.header-web{
 	color: var(--title-color);
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
@@ -91,50 +87,51 @@ ul {
 .studio-nav {
 	color: var(--title-text-color);
 }
-
-.navigation {
-	list-style: none;
-}
-.link-nav {
+.nav-link {
 	color: var(--title-text-color);
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
-.link-address {
+.contaks-link {
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--main-text-color);
+	padding-top: 32px;
+	padding-bottom: 32px;
+	display: block;
 }
 .link-current {
 	color: var(--title-color);
 }
 .header{
-	border: 1px solid #ECECEC;
+	border-bottom: 1px solid #ECECEC;
 }
 /*----------------------Особенная часть раздела "Студио"----------------------*/
 .section{
 	padding-top: 94px;
 	padding-bottom: 94px;
-	display: flex;
 }
 .section-advantage{
-	padding-top: 94px;
+	padding-bottom: 0;
 }
-.section:nth-child(even){
+.section-color{
 	background-color:#F5F4FA;
 }
-.container-title{
-	margin-bottom: 10px;
-}
-.container-img{
+.order-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--footer-text-color);
 	margin-bottom: 30px;
 }
 .command-item:not(:last-child){
 	margin-right: 30px;
 }
-.command-frame{
+.command-item{
 	background: #FFFFFF;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
@@ -142,10 +139,7 @@ ul {
 .order {
 	background-color: #2f303a;
 	text-align: center;
-	display: flex;
-}
-.navigation-adress {
-	list-style: none;
+	padding: 200px 0;
 }
 .btn-order {
 	font-weight: 700;
@@ -158,8 +152,10 @@ ul {
 	border-radius: 4px;
 	cursor: pointer;
 	border: none;
-	margin-top: 40px;
-	margin-bottom: 200px;
+	padding: 10px 32px;
+}
+.iteam-advantage:not(:last-child){
+	margin-right: 30px;
 }
 .advantage {
 	display: flex;
@@ -183,8 +179,6 @@ ul {
 }
 .works {
 	display: flex;
-	list-style: none;
-	text-align: center;
 }
 .title-command {
 	font-weight: 500;
@@ -193,6 +187,11 @@ ul {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--main-color);
+	margin-bottom: 10px;
+}
+.container-command{
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .command {
 	display: flex;
@@ -217,18 +216,11 @@ ul {
 	border-radius: 4px;
 }
 /*----------------------Особенная часть раздела "Партволио"----------------------*/
-.container-portfolio{
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
 /*----------------------Кнопки "Партволио"----------------------*/
-.container-btn{
-	display: flex;
-	justify-content: center;
-}
 .element-btn{
 	display: flex;
 	margin-bottom: 50px;
+	justify-content: center;
 }
 .btn-element {
 	cursor: pointer;
@@ -249,10 +241,8 @@ ul {
 /*----------------------Галерея "Партволио"----------------------*/
 .gallery{
 	margin: -15px;
-}
-.title-gallery,.text-gallery{
-	margin-left: 24px;
-	margin-right: 24px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .title-gallery {
 	font-weight: 700;
@@ -260,23 +250,24 @@ ul {
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--main-color);
-	margin-top: 20px;
 	margin-bottom: 4px;
 }
 .text-gallery {
 	font-size: 16px;
 	line-height: 1.9;
 	letter-spacing: 0.03em;
-	margin-bottom: 20px;
 }
-.iteam-gallery {
-	display: inline-block;
+.item-gallery {
 	background: var(--footer-text-color);
-	border: 1px solid #EEEEEE;
-	box-sizing: border-box;
 	margin: 15px;
 }
-
+.container-gallery{
+	padding: 20px 24px;
+}
+.container-gallery{
+	border: 1px solid #EEEEEE;
+	border-top: 0;
+}
 /*----------------------Подвал сайта----------------------*/
 .footer-address {
 	letter-spacing: 0.03em;
@@ -285,17 +276,17 @@ ul {
 	color: var(--footer-text-color);
 
 }
-.container-footer{
-	margin-top: 60px;
-	margin-bottom: 20px;
-}
-.address-mt {
+.mt-footer {
 	color: #ffffff60;
 }
 .studio-footer {
 	color: var(--footer-text-color);
 }
-.link-footer{
+.footer-web{
+	display: block;
+	margin-bottom: 20px;
+}
+.mt-footer,.maps-footer{
 	font-family: Roboto,sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -306,10 +297,7 @@ ul {
 .footer-item:not(:last-child){
 	margin-bottom: 9px;
 }
-.footer-item:last-child{
-	margin-bottom: 60px;
-}
 .footer{
 	background-color: #2f303a;
-	display: flex;
+	padding: 60px 0;
 }
