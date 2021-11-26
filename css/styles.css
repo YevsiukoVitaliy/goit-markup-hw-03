@@ -168,6 +168,9 @@ margin-right: 50px;
 	text-transform: uppercase;
 	color: var(--main-color);
 }
+.title-advantage{
+	margin-bottom: 10px;
+}
 .title-section {
 	font-weight: 700;
 	font-size: 36px;
